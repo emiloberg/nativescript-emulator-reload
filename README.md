@@ -1,4 +1,4 @@
-#nativescript-emulator-reload
+# nativescript-emulator-reload
 
 This small gulp script will monitor the source files of a [NativeScript](https://www.nativescript.org/) project and when a file is changed it'll rebuild and reload the emulator.
 
