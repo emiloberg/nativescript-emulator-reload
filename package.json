@@ -1,6 +1,6 @@
 {
   "name": "nativescript-emulator-reload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This small gulp script will monitor the source files of a NativeScript project and when a file is changed it'll rebuild and reload the emulator.",
   "main": "gulpfile.js",
   "dependencies": {},
