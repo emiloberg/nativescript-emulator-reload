@@ -78,7 +78,25 @@ Where the content of `src` will be moved to `/app` when compiled. Creating a fil
 
 Where the `app/{shared,test,views}` are the compiled version of `app/src/{shared,test,views}`. This way only the ES6 files will be compiled (and not things like `tns_modules`, anything in `node_modules` if you install npm packages, etc.)
 
-### Tests
+### Testing with Mocha
 [Mocha](http://mochajs.org/) is included for your testing pleasures.
 
 Place your tests in `/src/test` and run them with `gulp test`
+
+### Linting with eslint
+[eslint](http://eslint.org/) is included for your linting pleasures.
+
+Lint the code in your `app/src` folder by running `gulp lint`.
+
+If you're using ES6 you most probably want these settings in your `.eslintrc` in the root directory of your project. `es6: true` will enable all ES6 features _but_ modules which is enabled by `    "ecmaFeatures": { modules: true }`. Read more about [configuring eslint](http://eslint.org/docs/user-guide/configuring.html).
+
+```
+{
+    "env": {
+    	"es6": true
+    },
+    "ecmaFeatures": { 
+        modules: true 
+    }
+}
+```
